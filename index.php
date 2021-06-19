@@ -1,4 +1,5 @@
 <?php
+include_once 'vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Đền Hùng Online</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="public/assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="public/assets/icon.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -29,9 +30,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Lộ trình</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Giới thiệu</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Liên hệ</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#gioi_thieu">Giới thiệu</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#lo_trinh">Lộ trình</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#footer">Liên hệ</a></li>
             </ul>
         </div>
     </div>
@@ -52,64 +53,12 @@
         <p class="masthead-subheading font-weight-light mb-0">Nhớ ngày Giỗ Tổ mồng mười tháng ba</p>
     </div>
 </header>
-<!-- Portfolio Section-->
-<section class="page-section portfolio" id="portfolio">
-    <div class="container">
-        <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Lộ trình</h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
-            <!-- Portfolio Item 1-->
-            <div class="col-md-6 col-lg-6 mb-5 text-center">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="public/image/den_ha.png" alt="..." />
-                    <p>Đền hạ</p>
-                </div>
-            </div>
-            <!-- Portfolio Item 2-->
-            <div class="col-md-6 col-lg-6 mb-5 text-center">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="public/image/den_trung.png" alt="..." />
-                    <p>Đền trung</p>
-                </div>
-            </div>
-            <!-- Portfolio Item 3-->
-            <div class="col-md-6 col-lg-6 mb-5 text-center">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="public/image/dlen_thuong.png" alt="..." />
-                    <p>Đền thượng</p>
-                </div>
-            </div>
-            <!-- Portfolio Item 4-->
-            <div class="col-md-6 col-lg-6 mb-5 text-center">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="public/image/den_gieng_2.jpg" alt="..." />
-                    <p>Đền giếng</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<div><?php
+    include_once 'router.php';
+    ?>
+</div>
 <!-- Footer-->
-<footer class="footer text-center">
+<footer class="footer text-center" id="footer">
     <div class="container">
         <div class="row">
             <!-- Footer Location-->

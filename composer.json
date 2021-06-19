@@ -11,7 +11,9 @@
   ],
   "autoload": {
     "psr-4": {
-      "Src\\" : "src/"
+      "Src\\Controller\\" : "src/controller",
+      "Src\\Database\\" : "src/database",
+      "Src\\Model\\" : "src/model"
     }
   },
   "require": {
