@@ -2,15 +2,15 @@
 
 namespace Src\Model;
 
-use Src\Database\database;
+use Src\Database\Database;
 
-class model
+class Model
 {
     protected $pdo;
 
     public function __construct()
     {
-        $db = new database();
+        $db = new Database();
         $this->pdo = $db->connect();
     }
 }

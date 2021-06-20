@@ -73,6 +73,6 @@
     </div>
 </section>
 <div class="container" align="center">
-    <a class="btn btn-danger btn-lg" href="index.php?page=den_ha" role="button">Đi lễ</a>
+    <a class="btn btn-danger btn-lg" href="index.php?page=den_ha" role="button">Đi Đền Hạ</a>
 </div>
 <br><br><br><br><br><br>

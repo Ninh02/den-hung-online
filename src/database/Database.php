@@ -5,7 +5,7 @@ namespace Src\Database;
 use PDO;
 use PDOException;
 
-class database
+class Database
 {
     protected $dsn;
     protected $username;
@@ -18,7 +18,7 @@ class database
         $this->password = 'mAymaydau';
     }
 
-    public function connect()
+    public function connect(): PDO
     {
         try {
             return new PDO($this->dsn, $this->username, $this->password);
