@@ -15,7 +15,7 @@ class Database
     {
         $this->dsn = 'mysql:host=localhost;dbname=den_hung_online';
         $this->username = 'root';
-        $this->password = 'mAymaydau';
+        $this->password = '';
     }
 
     public function connect(): PDO
