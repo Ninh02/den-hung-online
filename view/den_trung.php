@@ -26,23 +26,23 @@
 <div id="anh"></div>
 <div id="audio"></div>
 <a href="index.php?page=den_trung&action=cong_duc"><img src="public/image/hom_cong_duc.png" alt="..." class="left" style="width:100px;height:200px;"></a>
-<button type="button" style="position: absolute; left: 480px; top: 1110px" class="btn btn-warning"
+<button type="button" style="position: absolute; left: 480px; top: 1005px" class="btn btn-warning"
         onclick="thapHuong()">Thắp hương
 </button>
-<button type="button" style="position: absolute; left: 600px; top: 1110px" class="btn btn-warning" onclick="tungKinh()">Tụng kinh
+<button type="button" style="position: absolute; left: 600px; top: 1005px" class="btn btn-warning" onclick="tungKinh()">Tụng kinh
 </button>
-<a href="index.php?page=ds_cong_duc"><button type="button" style="position: absolute; left: 700px; top: 1110px" class="btn btn-warning">Danh sách người công đức</a>
+<a href="index.php?page=ds_cong_duc"><button type="button" style="position: absolute; left: 700px; top: 1005px" class="btn btn-warning">Danh sách người công đức</a>
 </button>
 <a class="btn btn-danger btn-lg" href="index.php?page=den_thuong" role="button"
-   style="position: absolute; left: 1260px; top: 1100px">Đi Đền Thượng</a>
+   style="position: absolute; left: 1260px; top: 990px">Đi Đền Thượng</a>
 <script>
     function thapHuong() {
-        document.getElementById("anh").innerHTML = '<img src="public/image/LuHuong.gif" alt="..." style="position: absolute; top: 850px; left: 850px" width="210px" height="210px">';
+        document.getElementById("anh").innerHTML = '<img src="public/image/LuHuong.gif" alt="..." style="position: absolute; top: 750px; left: 670px" width="210px" height="210px">';
         document.getElementById("audio").innerHTML = '<audio src="public/audio/NamMoADiDaPhat.mp3" autoplay loop></audio>';
     }
 
     function tungKinh() {
-        document.getElementById("anh").innerHTML = '<img src="public/image/mo.png" alt="..." style="position: absolute; top: 980px; left: 840px" width="300px" height="300px">';
+        document.getElementById("anh").innerHTML = '<img src="public/image/mo.png" alt="..." style="position: absolute; top: 805px; left: 650px" width="300px" height="300px">';
         document.getElementById("audio").innerHTML = '<audio src="public/audio/tung-kinh.mp3" autoplay loop></audio>';
     }
 </script>
